@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreeCodeCamp: Tic Tac Toe Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Tic Tac Toe</h1>
+    <p>By MJ12358</p>
+  </header>
+  <div class="container">
+    <div id="topleft" class="square" onclick="flip(topleft, 0)">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div id="topcenter" class="square" onclick="flip(topcenter, 1)">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div id="topright" class="square" onclick="flip(topright, 2)">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div id="left" class="square" onclick="flip(left, 3)">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div id="center" class="square" onclick="flip(center, 4)">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div id="right" class="square" onclick="flip(right, 5)">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div id="bottomleft" class="square" onclick="flip(bottomleft, 6)">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div id="bottomcenter" class="square" onclick="flip(bottomcenter, 7)">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div id="bottomright" class="square" onclick="flip(bottomright, 8)">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <!--<div style="clear:both"></div>-->
+  </div>
+  <div class="screen">
+    <div id="choice">
+      <p>What would you like to play as?</p>
+      <div id="X" onclick="setPlayer('X')">X</div>
+      <div id="O" onclick="setPlayer('O')">O</div>
+    </div>
+    <div id="reset" onclick="reset()">RESET</div>
+  </div>
+
+<!--<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>-->
+<script src="js/index.js"></script>
+
+</body>
+</html>
